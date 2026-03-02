@@ -54,6 +54,7 @@ import TopGainers from "./pages/TopGainers";
 import TopLosers from "./pages/TopLosers";
 import ApiAccess from "./pages/ApiAccess";
 import AIBlogPage from "./pages/AIBlog/AIBlogPage";
+import TermsConditions from "./pages/TermsConditions";
 
 const App = () => {
   const lenisRef = useRef(null);
@@ -205,7 +206,7 @@ const App = () => {
                 </Route>
                 <Route path="/coin/:coinId" element={<CoinWrapper />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<TermsOfService />} />
+                <Route path="/terms" element={<TermsConditions />} />
                 <Route path="/contactus" element={<ContactUs />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/feedback" element={<Feedback />} />
