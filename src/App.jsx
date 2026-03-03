@@ -55,6 +55,8 @@ import TopLosers from "./pages/TopLosers";
 import ApiAccess from "./pages/ApiAccess";
 import AIBlogPage from "./pages/AIBlog/AIBlogPage";
 import TermsConditions from "./pages/TermsConditions";
+import Watchlist from "./pages/Watchlist";
+import { WatchlistProvider } from "@/context/WatchlistContext";
 
 const App = () => {
   const lenisRef = useRef(null);
@@ -142,6 +144,7 @@ const App = () => {
       />
       <ThemeProvider>
         <AuthProvider>
+          <WatchlistProvider>
           <div className="app">
             {isLoading && !isDashboard && <LoadingSpinner />}
             <div
@@ -174,6 +177,7 @@ const App = () => {
                 <Route path="/new-listings" element={<NewListings />} />
                 <Route path="/top-losers" element={<TopLosers />} />
                 <Route path="/api-access" element={<ApiAccess />} />
+                <Route path="/watchlist" element={<Watchlist />} />
 
                 <Route path="/gainers" element={<TopGainers />} />
 
@@ -219,6 +223,7 @@ const App = () => {
           </div>
           <ScrollToTop lenis={lenisRef.current} />
           <CryptoChatbot />
+          </WatchlistProvider>
         </AuthProvider>
       </ThemeProvider>
     </>
