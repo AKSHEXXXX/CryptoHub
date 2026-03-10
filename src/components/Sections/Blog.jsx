@@ -43,7 +43,7 @@ export default function Blog() {
             transition={{ duration: 0.6 }}
           >
             <div className="hero-badge">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <circle cx="8" cy="8" r="7" stroke="#4559DC" strokeWidth="2" />
                 <path d="M5 8L7 10L11 6" stroke="#4559DC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -62,7 +62,7 @@ export default function Blog() {
         {/* Featured Reports */}
         <div className="featured-section">
           <h2 className="section-title">
-            <svg width="20" height="20" viewBox="0 0 16 17" fill="none">
+            <svg width="20" height="20" viewBox="0 0 16 17" fill="none" aria-hidden="true">
               <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z"
                 stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -100,7 +100,7 @@ export default function Blog() {
                     <div className="tag-indicator">
                       {post.tag === "Premium" ? (
                         <div className="premium-indicator">
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                             <circle cx="6" cy="6" r="5" fill={post.badgeColor} stroke="white" strokeWidth="1" />
                             <path d="M3.5 6L5 7.5L8.5 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
@@ -108,7 +108,7 @@ export default function Blog() {
                         </div>
                       ) : (
                         <div className="free-indicator">
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                             <circle cx="6" cy="6" r="5" fill={post.badgeColor} stroke="white" strokeWidth="1" />
                             <path d="M8 6H4M6 4V8" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
                           </svg>
@@ -130,7 +130,7 @@ export default function Blog() {
 
                     <button className="read-btn">
                       Read
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                         <path d="M3.5 8H12.5M12.5 8L9 4.5M12.5 8L9 11.5"
                           stroke="currentColor" strokeWidth="1.5"
                           strokeLinecap="round" strokeLinejoin="round" />
@@ -187,7 +187,7 @@ export default function Blog() {
                     <span className="post-read-time">{post.readTime}</span>
                     <div className="post-read-more">
                       Read Article
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                         <path d="M1 7H13M13 7L9 3M13 7L9 11"
                           stroke="currentColor" strokeWidth="1.5"
                           strokeLinecap="round" strokeLinejoin="round" />

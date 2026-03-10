@@ -270,7 +270,7 @@ function Navbar() {
                       }}
                     />
                   ) : (
-                    <FiUser />
+                    <FiUser aria-hidden="true" />
                   )}
                 </button>
 
@@ -279,7 +279,7 @@ function Navbar() {
                   role="menu"
                 >
                   <div className="profile-dropdown-header">
-                    <FiMail className="profile-icon" />
+                    <FiMail className="profile-icon" aria-hidden="true" />
                     <span className="profile-email">{currentUser.email}</span>
                   </div>
 
@@ -292,7 +292,7 @@ function Navbar() {
                         className="profile-dropdown-item"
                         onClick={() => setIsProfileOpen(false)}
                       >
-                        <FiLock />
+                        <FiLock aria-hidden="true" />
                         <span>Change Password</span>
                       </Link>
                     )}
@@ -302,7 +302,7 @@ function Navbar() {
                       className="profile-dropdown-item"
                       onClick={() => setIsProfileOpen(false)}
                     >
-                      <FiBookmark />
+                      <FiBookmark aria-hidden="true" />
                       <span>Saved Insights</span>
                     </Link>
 
@@ -313,7 +313,7 @@ function Navbar() {
                       }}
                       className="profile-dropdown-item logout-item"
                     >
-                      <FiLogOut />
+                      <FiLogOut aria-hidden="true" />
                       <span>Logout</span>
                     </button>
                   </div>

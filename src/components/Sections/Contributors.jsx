@@ -387,7 +387,7 @@ const Contributors = () => {
                 width="120"
                 height="120"
               />
-              <div className="admin-badge">👑</div>
+              <div className="admin-badge" aria-hidden="true">👑</div>
             </div>
             <div className="project-admin-info">
               <h2 className="project-admin-title">Project Admin</h2>
@@ -415,7 +415,7 @@ const Contributors = () => {
               className="btn btn-outline project-admin-btn"
               onClick={handleOpenRepo}
             >
-              Open Repository 📚
+              Open Repository <span aria-hidden="true">📚</span>
             </button>
           </div>
         </div>
@@ -566,6 +566,7 @@ const Contributors = () => {
               <button
                 className="contributors-modal-close"
                 onClick={handleCloseModal}
+                aria-label="Close"
               >
                 ×
               </button>

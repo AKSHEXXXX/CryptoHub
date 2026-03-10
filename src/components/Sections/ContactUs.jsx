@@ -14,16 +14,16 @@ const ContactUs = () => {
       <div className="contact-content">
         <form className="contact-form">
           <div className="form-group">
-            <label>Your Name</label>
-            <input type="text" placeholder="Enter your name" />
+            <label htmlFor="contact-name">Your Name</label>
+            <input id="contact-name" type="text" placeholder="Enter your name" />
           </div>
           <div className="form-group">
-            <label>Your Email</label>
-            <input type="email" placeholder="Enter your email" />
+            <label htmlFor="contact-email">Your Email</label>
+            <input id="contact-email" type="email" placeholder="Enter your email" />
           </div>
           <div className="form-group">
-            <label>Your Message</label>
-            <textarea rows="5" placeholder="Enter your message"></textarea>
+            <label htmlFor="contact-message">Your Message</label>
+            <textarea id="contact-message" rows="5" placeholder="Enter your message"></textarea>
           </div>
           <button className="button" type="submit">
             Send Message
