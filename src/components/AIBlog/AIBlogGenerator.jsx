@@ -97,7 +97,7 @@ export default function AIBlogGenerator({ onArticleGenerated }) {
                         </>
                     ) : (
                         <>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path
                                     d="M8 1L10.2 5.6L15 6.5L11.5 10L12.3 15L8 12.6L3.7 15L4.5 10L1 6.5L5.8 5.6L8 1Z"
                                     stroke="currentColor"

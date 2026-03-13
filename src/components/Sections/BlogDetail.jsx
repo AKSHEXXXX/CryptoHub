@@ -144,7 +144,7 @@ const BlogDetail = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <button onClick={() => navigate("/blog")} className="breadcrumb-link">
-          <FiArrowLeft /> All Insights
+          <FiArrowLeft aria-hidden="true" /> All Insights
         </button>
         <span className="breadcrumb-divider">/</span>
         <span className="breadcrumb-current">{blog.category || "Article"}</span>
@@ -172,18 +172,18 @@ const BlogDetail = () => {
         <p className="blog-detail-excerpt">{blog.excerpt}</p>
 
         <div className="blog-metadata">
-          <Meta icon={<FiUser />} label="AUTHOR" value="Thomas Wright" />
+          <Meta icon={<FiUser aria-hidden="true" />} label="AUTHOR" value="Thomas Wright" />
           <Meta
-            icon={<FiCalendar />}
+            icon={<FiCalendar aria-hidden="true" />}
             label="PUBLISHED"
             value={blog.date || "N/A"}
           />
           <Meta
-            icon={<FiClock />}
+            icon={<FiClock aria-hidden="true" />}
             label="READ TIME"
             value={blog.readTime || "N/A"}
           />
-          <Meta icon={<FiEye />} label="VIEWS" value={views.toLocaleString()} />
+          <Meta icon={<FiEye aria-hidden="true" />} label="VIEWS" value={views.toLocaleString()} />
         </div>
       </motion.div>
 
@@ -227,7 +227,7 @@ const BlogDetail = () => {
               onClick={() => navigate("/blog")}
               className="back-to-blog-btn"
             >
-              <FiArrowLeft /> Back to All Insights
+              <FiArrowLeft aria-hidden="true" /> Back to All Insights
             </button>
           </div>
         </motion.article>
